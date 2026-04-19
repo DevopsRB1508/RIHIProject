@@ -1,3 +1,4 @@
+// src/components/HappyClients.js
 import React, { useState, useEffect, useRef } from 'react';
 import '../../styles/HappyClients.css';
 
@@ -9,27 +10,27 @@ const HappyClients = () => {
     {
       id: 1,
       logo: '/images/clients/c1.png',
-      alt: 'Studio 42'
+      alt: 'K Cee'
     },
     {
       id: 2,
       logo: '/images/clients/c2.png',
-      alt: 'Prakash Silks & Sarees'
+      alt: 'Studio 42'
     },
     {
       id: 3,
       logo: '/images/clients/c3.png',
-      alt: 'Busch Light'
+      alt: 'Mizzle'
     },
     {
       id: 4,
       logo: '/images/clients/c4.png',
-      alt: 'Shock Top'
+      alt: 'Prakash Silks & Sarees'
     }
   ];
 
   const stats = [
-    { value: '150+', label: 'Projects Completed', icon: '🏆' },
+    { value: '1500+', label: 'Projects Completed', icon: '🏆' },
     { value: '25+', label: 'Years Experience', icon: '⏰' },
     { value: '100%', label: 'Client Satisfaction', icon: '❤️' },
     { value: '50+', label: 'Design Awards', icon: '🏅' }
@@ -57,47 +58,46 @@ const HappyClients = () => {
   }, []);
 
   return (
-    <section className="happy-clients-section" ref={sectionRef}>
+    <section className="hc-section" ref={sectionRef}>
       {/* Background Pattern */}
-      <div className="section-background-pattern"></div>
+      <div className="hc-bg-pattern"></div>
       
-      <div className="happy-clients-container">
+      <div className="hc-container">
         {/* Section Header */}
-        <div className={`section-header ${isVisible ? 'fade-in' : ''}`}>
-          <span className="section-subtitle">TRUSTED BY INDUSTRY LEADERS</span>
-          <h2 className="section-title">
-            Our <span className="highlight">Happy Clients</span>
+        <div className={`hc-header ${isVisible ? 'hc-fade-in' : ''}`}>
+          <h2 className="hc-header-title">
+            Our <span className="hc-header-highlight">Happy Clients</span>
           </h2>
-          <p className="section-description">
+          <p className="hc-header-desc">
             Join hundreds of satisfied clients who have transformed their spaces with our premium interior solutions
           </p>
         </div>
 
         {/* Stats Section */}
-        <div className={`stats-grid ${isVisible ? 'slide-up' : ''}`}>
+        <div className={`hc-stats-grid ${isVisible ? 'hc-slide-up' : ''}`}>
           {stats.map((stat, index) => (
-            <div key={index} className="stat-card" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="stat-icon">{stat.icon}</div>
-              <div className="stat-value">{stat.value}</div>
-              <div className="stat-label">{stat.label}</div>
+            <div key={index} className="hc-stat-card" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div className="hc-stat-icon">{stat.icon}</div>
+              <div className="hc-stat-value">{stat.value}</div>
+              <div className="hc-stat-label">{stat.label}</div>
             </div>
           ))}
         </div>
 
-        {/* Client Logo Strip - Clean Style */}
-        <div className={`clients-showcase ${isVisible ? 'fade-in' : ''}`}>
-          <h3 className="showcase-title">PREMIUM PARTNERS</h3>
-          <div className="clients-logo-strip">
+        {/* Client Logo Strip */}
+        <div className={`hc-clients-showcase ${isVisible ? 'hc-fade-in' : ''}`}>
+          <h3 className="hc-showcase-title">HAPPY CLIENTS</h3>
+          <div className="hc-logo-strip">
             {clients.map((client, index) => (
               <div 
                 key={client.id} 
-                className="logo-item"
+                className="hc-logo-item"
                 style={{ animationDelay: `${index * 0.03}s` }}
               >
                 <img 
                   src={client.logo} 
                   alt={client.alt}
-                  className="logo-image"
+                  className="hc-logo-image"
                   loading="lazy"
                 />
               </div>
@@ -106,18 +106,18 @@ const HappyClients = () => {
         </div>
 
         {/* CTA Banner */}
-        <div className={`cta-banner ${isVisible ? 'scale-in' : ''}`}>
-          <div className="cta-content">
-            <div className="cta-text">
-              <h3 className="cta-title">Ready to Join Our Happy Clients?</h3>
-              <p className="cta-subtitle">Experience the luxury of bespoke interior design</p>
+        <div className={`hc-cta-banner ${isVisible ? 'hc-scale-in' : ''}`}>
+          <div className="hc-cta-content">
+            <div className="hc-cta-text">
+              <h3 className="hc-cta-title">Ready to Join Our Happy Clients?</h3>
+              <p className="hc-cta-subtitle">Experience the luxury of bespoke interior design</p>
             </div>
-            <div className="cta-buttons">
-              <a href="/consultation" className="cta-btn-primary">
+            <div className="hc-cta-buttons">
+              <a href="/consultation" className="hc-cta-btn-primary">
                 SCHEDULE CONSULTATION
-                <span className="btn-arrow">→</span>
+                <span className="hc-btn-arrow">→</span>
               </a>
-              <a href="/portfolio" className="cta-btn-secondary">
+              <a href="/portfolio" className="hc-cta-btn-secondary">
                 VIEW PORTFOLIO
               </a>
             </div>

@@ -16,7 +16,7 @@ const ConsultationPage = () => {
   const [toast, setToast] = useState({ show: false, message: '', type: '' });
 
   // Get API URL from environment variables
-  const API_URL = process.env.REACT_APP_API_URL || 'https://rajalaxshmiinteriors.com';
+  const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
   const projectTypes = [
     'Residential Interior',

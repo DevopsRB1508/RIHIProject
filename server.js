@@ -16,32 +16,32 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Email transporter
-const transporter = nodemailer.createTransport({
-  host: process.env.EMAIL_HOST || 'smtp.office365.com',
-  port: process.env.EMAIL_PORT || 587,
-  secure: false,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-  tls: {
-    ciphers: 'SSLv3',
-    rejectUnauthorized: false
-  }
-});
 // const transporter = nodemailer.createTransport({
-//   host: 'smtp.office365.com',
-//   port: 587,
+//   host: process.env.EMAIL_HOST || 'smtp.office365.com',
+//   port: process.env.EMAIL_PORT || 587,
 //   secure: false,
 //   auth: {
-//     user: 'monitoring.alerts@tolaram.com',
-//     pass: 'F#610018814775uc',
+//     user: process.env.EMAIL_USER,
+//     pass: process.env.EMAIL_PASS,
 //   },
 //   tls: {
 //     ciphers: 'SSLv3',
 //     rejectUnauthorized: false
 //   }
 // });
+const transporter = nodemailer.createTransport({
+  host: 'smtp.office365.com',
+  port: 587,
+  secure: false,
+  auth: {
+    user: 'monitoring.alerts@tolaram.com',
+    pass: 'F#610018814775uc',
+  },
+  tls: {
+    ciphers: 'SSLv3',
+    rejectUnauthorized: false
+  }
+});
 
 // Twilio client - COMMENTED OUT
 // let twilioClient = null;

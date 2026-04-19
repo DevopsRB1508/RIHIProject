@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 80;
 
 // Middleware
 app.use(cors());
@@ -16,13 +16,26 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Email transporter
+// const transporter = nodemailer.createTransport({
+//   host: process.env.EMAIL_HOST || 'smtp.office365.com',
+//   port: process.env.EMAIL_PORT || 587,
+//   secure: false,
+//   auth: {
+//     user: process.env.EMAIL_USER,
+//     pass: process.env.EMAIL_PASS,
+//   },
+//   tls: {
+//     ciphers: 'SSLv3',
+//     rejectUnauthorized: false
+//   }
+// });
 const transporter = nodemailer.createTransport({
-  host: process.env.EMAIL_HOST || 'smtp.office365.com',
-  port: process.env.EMAIL_PORT || 587,
+  host: 'smtp.office365.com',
+  port: 587,
   secure: false,
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
+    user: 'monitoring.alerts@tolaram.com',
+    pass: 'F#610018814775uc',
   },
   tls: {
     ciphers: 'SSLv3',
@@ -170,7 +183,7 @@ async function sendConsultationEmail(consultation) {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: consultation.email,
-    cc: process.env.ADMIN_EMAIL || process.env.EMAIL_USER,
+    cc: process.env.ADMIN_EMAIL || 'ranganathan21rp@gmail.com',
     subject: 'Consultation Booking Confirmation',
     html: `
       <div style="font-family: Arial, sans-serif;">
@@ -193,7 +206,7 @@ async function sendEstimateEmail(estimate) {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: estimate.email,
-    cc: process.env.ADMIN_EMAIL || process.env.EMAIL_USER,
+    cc: process.env.ADMIN_EMAIL || 'ranganathan21rp@gmail.com',
     subject: 'Your Estimate Request',
     html: `
       <div style="font-family: Arial, sans-serif;">
@@ -215,7 +228,7 @@ async function sendEstimateEmail(estimate) {
 async function sendContactEmail(contact) {
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: process.env.ADMIN_EMAIL || process.env.EMAIL_USER,
+    to: process.env.ADMIN_EMAIL || 'ranganathan21rp@gmail.com',
     replyTo: contact.email,
     subject: `New Contact Message from ${contact.name}`,
     html: `

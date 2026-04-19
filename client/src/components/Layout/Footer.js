@@ -56,12 +56,12 @@ const Footer = () => {
           <div className="footer-section">
             <h4 className="footer-heading">SERVICES</h4>
             <ul className="footer-links">
-              <li><Link to="/portfolio?category=residential">Full Home</Link></li>
-              <li><Link to="/portfolio?category=kitchen">Kitchen</Link></li>
-              <li><Link to="/portfolio?category=bedroom">Bedroom</Link></li>
-              <li><Link to="/portfolio?category=living">Living Room</Link></li>
-              <li><Link to="/portfolio?category=wardrobe">Wardrobe</Link></li>
-              <li><Link to="/portfolio?category=commercial">Commercial</Link></li>
+              <li><span className="footer-link-text">Full Home</span></li>
+              <li><span className="footer-link-text">Kitchen</span></li>
+              <li><span className="footer-link-text">Bedroom</span></li>
+              <li><span className="footer-link-text">Living Room</span></li>
+              <li><span className="footer-link-text">Wardrobe</span></li>
+              <li><span className="footer-link-text">Commercial</span></li>
             </ul>
           </div>
 

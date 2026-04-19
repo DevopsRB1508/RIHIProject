@@ -141,6 +141,54 @@
   align-items: flex-start;
 }
 
+/* Clickable Address Styles */
+.clickable-address {
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: var(--radius);
+  padding: 8px !important;
+  margin: -8px !important;
+  width: calc(100% + 16px) !important;
+}
+
+.clickable-address:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(3px);
+}
+
+.clickable-address:hover .address-text {
+  color: var(--white);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.clickable-address:hover i {
+  color: var(--white);
+}
+
+.clickable-address:focus {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 2px;
+}
+
+.clickable-address:focus-visible {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 2px;
+}
+
+/* Add a subtle map indicator on hover */
+.clickable-address .address-text::after {
+  content: " ↗";
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  display: inline-block;
+}
+
+.clickable-address:hover .address-text::after {
+  opacity: 1;
+}
+
 .address-content {
   display: flex;
   flex-direction: column;
@@ -161,6 +209,7 @@
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.6;
   word-break: break-word;
+  transition: var(--transition);
 }
 
 /* Social Links */
@@ -538,6 +587,11 @@
   .address-text {
     text-align: left;
   }
+  
+  /* Hide map indicator on mobile */
+  .clickable-address .address-text::after {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -619,6 +673,13 @@
   
   .newsletter-input {
     text-align: center;
+  }
+  
+  /* Adjust clickable address padding for mobile */
+  .clickable-address {
+    padding: 6px !important;
+    margin: -6px !important;
+    width: calc(100% + 12px) !important;
   }
 }
 

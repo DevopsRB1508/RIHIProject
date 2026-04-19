@@ -26,6 +26,11 @@ const HappyClients = () => {
       id: 4,
       logo: '/images/clients/c4.png',
       alt: 'Prakash Silks & Sarees'
+    },
+    {
+      id: 5,
+      logo: '/images/clients/c5.png',
+      alt: 'Aero'
     }
   ];
 

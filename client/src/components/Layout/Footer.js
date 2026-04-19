@@ -5,6 +5,15 @@ import '../../../src/styles/Footer.css';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  // Map links for locations
+  const showroomMapLink = "https://maps.app.goo.gl/AdPU55UjFyGspscDA";
+  const factoryMapLink = "https://maps.app.goo.gl/YfyuRC3muiogCjDr6";
+
+  // Function to open map link in new tab
+  const openMapLink = (mapLink) => {
+    window.open(mapLink, '_blank');
+  };
+
   return (
     <footer className="livepace-footer">
       <div className="footer-container">
@@ -30,16 +39,28 @@ const Footer = () => {
                 <i className="fas fa-envelope"></i>
                 <span>rlhitechinteriors@gmail.com</span>
               </div>
-              {/* Showroom Address */}
-              <div className="contact-item address-item">
+              {/* Showroom Address - Now Clickable */}
+              <div 
+                className="contact-item address-item clickable-address"
+                onClick={() => openMapLink(showroomMapLink)}
+                role="button"
+                tabIndex={0}
+                onKeyPress={(e) => e.key === 'Enter' && openMapLink(showroomMapLink)}
+              >
                 <i className="fas fa-map-marker-alt"></i>
                 <div className="address-content">
                   <span className="address-label">Showroom</span>
                   <span className="address-text">No 324, 1/3, 18th street, 5th avenue Ashok Nagar, Chennai - 83</span>
                 </div>
               </div>
-              {/* Factory Address */}
-              <div className="contact-item address-item">
+              {/* Factory Address - Now Clickable */}
+              <div 
+                className="contact-item address-item clickable-address"
+                onClick={() => openMapLink(factoryMapLink)}
+                role="button"
+                tabIndex={0}
+                onKeyPress={(e) => e.key === 'Enter' && openMapLink(factoryMapLink)}
+              >
                 <i className="fas fa-industry"></i>
                 <div className="address-content">
                   <span className="address-label">Factory</span>

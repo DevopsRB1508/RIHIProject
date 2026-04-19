@@ -12,6 +12,9 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [toast, setToast] = useState({ show: false, message: '', type: '' });
 
+   // Get API URL from environment variables
+  const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
   const showToast = (message, type = 'success') => {
     setToast({ show: true, message, type });
     setTimeout(() => {

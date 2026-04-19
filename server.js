@@ -16,6 +16,14 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Email transporter
+
+// DEBUG: Check if env vars are loaded
+console.log('=== ENV CHECK ===');
+console.log('EMAIL_USER exists:', !!process.env.EMAIL_USER);
+console.log('EMAIL_USER length:', process.env.EMAIL_USER?.length || 0);
+console.log('EMAIL_PASS exists:', !!process.env.EMAIL_PASS);
+console.log('EMAIL_PASS length:', process.env.EMAIL_PASS?.length || 0);
+console.log('================');
 const transporter = nodemailer.createTransport({
   host: process.env.EMAIL_HOST || 'smtp.office365.com',
   port: process.env.EMAIL_PORT || 587,
@@ -25,7 +33,6 @@ const transporter = nodemailer.createTransport({
     pass: 'process.env.EMAIL_PASS',
   },
   tls: {
-    ciphers: 'SSLv3',
     rejectUnauthorized: false
   }
 });

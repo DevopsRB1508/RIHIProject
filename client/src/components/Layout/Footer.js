@@ -50,7 +50,7 @@ const Footer = () => {
                 <i className="fas fa-map-marker-alt"></i>
                 <div className="address-content">
                   <span className="address-label">Showroom</span>
-                  <span className="address-text">No 324, 1/3, 18th street, 5th avenue Ashok Nagar, Chennai - 83</span>
+                  <span className="address-text">No 324, 1/3, 18th street, 5th avenue Ashok Nagar, Chennai - 600083</span>
                 </div>
               </div>
               {/* Factory Address - Now Clickable */}

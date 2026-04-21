@@ -320,7 +320,7 @@ const Contact = () => {
                 </svg>
               </div>
               <h3>Showroom</h3>
-              <p>No 324, 1/3, 18th street, 5th avenue<br />Ashok Nagar, Chennai - 83</p>
+              <p>No 324, 1/3, 18th street, 5th avenue<br />Ashok Nagar, Chennai - 600083</p>
               <p className="location-phone">044 - 24743301</p>
               <span className="view-map-hint">
                 <i className="fas fa-map-marker-alt"></i> Click to view on map
@@ -340,7 +340,7 @@ const Contact = () => {
                 </svg>
               </div>
               <h3>Factory</h3>
-              <p>No 9 & 10, 2nd floor, Musthapha Salai<br />Vanagaram, Chennai - 95</p>
+              <p>No 9 & 10, 2nd floor, Musthapha Salai<br />Vanagaram, Chennai - 600116</p>
               <p className="location-phone">+91 8248651091</p>
               <span className="view-map-hint">
                 <i className="fas fa-map-marker-alt"></i> Click to view on map

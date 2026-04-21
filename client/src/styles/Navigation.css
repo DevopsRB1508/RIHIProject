@@ -176,7 +176,7 @@
 .brand-logo {
   height: auto;
   width: auto;
-  max-height: 80px; /* Controls maximum height */
+  max-height: 70px; /* Controls maximum height */
   max-width: 350px; /* Controls maximum width */
   object-fit: contain;
   display: block;

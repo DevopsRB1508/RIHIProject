@@ -99,7 +99,7 @@ const Contact = () => {
 
   // Map links for locations
   const showroomMapLink = "https://maps.app.goo.gl/AdPU55UjFyGspscDA";
-  const factoryMapLink = "https://maps.app.goo.gl/YfyuRC3muiogCjDr6";
+  const factoryMapLink = "https://maps.app.goo.gl/gty6EV865KXNJyKu8";
 
   // Function to open map link in new tab
   const openMapLink = (mapLink) => {
@@ -108,7 +108,7 @@ const Contact = () => {
 
   // Addresses for display
   const showroomAddress = "No 324, 1/3, 18th street, 5th avenue, Ashok Nagar, Chennai - 600083";
-  const factoryAddress = "No 9 & 10, 2nd floor, Musthapha Salai, Vanagaram, Chennai - 600095";
+  const factoryAddress = "No 9 & 10, 2nd floor, Musthapha Salai, Vanagaram, Chennai - 600116";
 
   return (
     <main className="contact-page">

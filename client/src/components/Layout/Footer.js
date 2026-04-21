@@ -7,7 +7,7 @@ const Footer = () => {
 
   // Map links for locations
   const showroomMapLink = "https://maps.app.goo.gl/AdPU55UjFyGspscDA";
-  const factoryMapLink = "https://maps.app.goo.gl/YfyuRC3muiogCjDr6";
+  const factoryMapLink = "https://maps.app.goo.gl/gty6EV865KXNJyKu8";
 
   // Function to open map link in new tab
   const openMapLink = (mapLink) => {
@@ -64,7 +64,7 @@ const Footer = () => {
                 <i className="fas fa-industry"></i>
                 <div className="address-content">
                   <span className="address-label">Factory</span>
-                  <span className="address-text">No 9 & 10, 2nd floor, Musthapha Salai, Vanagaram, Chennai - 95</span>
+                  <span className="address-text">No 9 & 10, 2nd floor, Musthapha Salai, Vanagaram, Chennai - 600116</span>
                 </div>
               </div>
             </div>

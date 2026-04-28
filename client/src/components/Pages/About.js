@@ -56,7 +56,7 @@ const About = () => {
             <div className="story-text">
               <p>
                 Rajalakshmi Hi-Tech Interiors began with a simple yet powerful idea: everyone deserves 
-                to live in a beautifully designed space. What started as a small studio in Mumbai 
+                to live in a beautifully designed space. What started as a small studio in Chennai 
                 has grown into a nationwide design collective serving thousands of happy families.
               </p>
               <p>
@@ -66,7 +66,7 @@ const About = () => {
                 functional.
               </p>
               <p>
-                Today, we've completed over 500+ projects across India, from cozy Mumbai apartments 
+                Today, we've completed over 1500+ projects across India, from cozy Chennai apartments 
                 to sprawling Bangalore villas, each telling its own unique story through design.
               </p>
             </div>

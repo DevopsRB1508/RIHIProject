@@ -9,7 +9,7 @@ const About = () => {
         <div className="container">
           <h1 className="about-title">Crafting Spaces That Tell Your Story</h1>
           <p className="about-subtitle">
-            At LivePace, we believe that your space should be a true reflection of who you are – 
+            At Rajalakshmi Hi-Tech Interiors, we believe that your space should be a true reflection of who you are – 
             a place where every detail tells your unique story.
           </p>
         </div>
@@ -55,7 +55,7 @@ const About = () => {
             <h2 className="section-title">Our Story</h2>
             <div className="story-text">
               <p>
-                Founded in 2018, LivePace began with a simple yet powerful idea: everyone deserves 
+                Rajalakshmi Hi-Tech Interiors began with a simple yet powerful idea: everyone deserves 
                 to live in a beautifully designed space. What started as a small studio in Mumbai 
                 has grown into a nationwide design collective serving thousands of happy families.
               </p>

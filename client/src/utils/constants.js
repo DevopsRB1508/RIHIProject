@@ -1,15 +1,15 @@
 export const APP_CONFIG = {
-  name: 'LivePace',
+  name: 'Rajalakshmi Hi-Tech Interiors',
   description: 'Home to Beautiful Interiors',
   contact: {
     phone: '+91 9876543210',
-    email: 'info@livepace.com',
+    email: 'rlhitechinteriors@gmail.com',
     address: '123 Design Street, Interior City, IC 12345'
   },
   social: {
-    facebook: 'https://facebook.com/livepace',
-    instagram: 'https://instagram.com/livepace',
-    pinterest: 'https://pinterest.com/livepace'
+    facebook: 'https://facebook.com/rlhitechinteriors',
+    instagram: 'https://instagram.com/rlhitechinteriors',
+    pinterest: 'https://pinterest.com/rlhitechinteriors'
   }
 };
 

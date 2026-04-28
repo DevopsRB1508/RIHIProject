@@ -337,7 +337,7 @@ const ConsultationPage = () => {
             <div className="why-choose-card">
               <div className="card-header">
                 <i className="fas fa-star"></i>
-                <h3>Why Choose LivePace?</h3>
+                <h3>Why Choose Rajalakshmi Hi-Tech Interiors?</h3>
               </div>
               
               <div className="benefit-grid">

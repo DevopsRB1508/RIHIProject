@@ -70,7 +70,7 @@ const Cities = () => {
       <div className="text-center mt-5">
         <div className="alert alert-info">
           <h5>Not in your city?</h5>
-          <p>We're expanding! Contact us to bring LivePace to your city.</p>
+          <p>We're expanding! Contact us to bring Rajalakshmi Hi-Tech Interiors to your city.</p>
           <a href="/consultation" className="btn btn-prime">
             Request Service in Your City
           </a>

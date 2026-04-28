@@ -1,7 +1,7 @@
 {
-  "name": "livepace-unified",
+  "name": "rlhitechinteriors",
   "version": "1.0.0",
-  "description": "LivePace Interior Design - Unified Application",
+  "description": "Rajalakshmi Hi-Tech Interiors - Unified Application",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

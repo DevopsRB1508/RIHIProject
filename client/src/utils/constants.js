@@ -2,7 +2,7 @@ export const APP_CONFIG = {
   name: 'Rajalakshmi Hi-Tech Interiors',
   description: 'Home to Beautiful Interiors',
   contact: {
-    phone: '+91 9876543210',
+    phone: '+91 9941874830',
     email: 'rlhitechinteriors@gmail.com',
     address: '123 Design Street, Interior City, IC 12345'
   },
